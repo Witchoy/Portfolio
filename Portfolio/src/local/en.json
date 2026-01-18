@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "name": "Jules Goy",
+    "title": "Junior Software Developer",
+    "intro": "Hi! I'm Jules Goy, a French junior software developer. I'm passionate about video game development and Unix systems, and I also enjoy music, cinema, and comics."
+  },
+  "about": {
+    "title": "About Me",
+    "paragraphs": [
+      "I am a French software developer student in BUT Informatique, specializing in 'Réalisation d'applications : conception, développement, validation.' Throughout my studies, I have gained solid foundations in programming, web development, database management, system and network administration, and project management.",
+      "My academic projects, such as Níðhöggr (TypeScript/Angular/Postgresql) and Torrington (C# with Godot, teamwork project), have allowed me to apply these skills in concrete contexts: from designing user interfaces and managing data to collaborating in a group and presenting results. These experiences, combined with personal projects like my WiMusic API (Node.js, TypeScript, Docker), have shaped my professional identity as a developer who values both technical quality and user experience.",
+      "I am particularly interested in game development. I currently work with Unity and plan to explore Unreal Engine. Beyond coding, I draw inspiration from cinema, music, and comics, which nurture my creativity and curiosity."
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "cards": [
+      {
+        "name": "Níðhöggr",
+        "desc": "An application developed as a team project for the Eurométropole of Strasbourg. Features user authentication, data management, and responsive design. Built with modern development practices including version control, agile methodology, and collaborative programming.",
+        "tech": "TypeScript, Angular, Postgresql"
+      },
+      {
+        "name": "Arbay",
+        "desc": "A 2D adventure game featuring character movement and enemies. Developed using Unity's 2D tools, including sprite animation, physics system, and scene management. This project enhanced my understanding of game development pipelines and C# programming.",
+        "tech": "C#, Unity"
+      },
+      {
+        "name": "WiMusic API",
+        "desc": "A RESTful music streaming API with complete CRUD operations for tracks, artists, and albums. Features include file upload handling, database relationships with Prisma ORM, input validation, and audio streaming capabilities. Containerized with Docker for easy deployment and scalability.",
+        "tech": "TypeScript, Node.js, Docker"
+      },
+      {
+        "name": "Torrington (T3)",
+        "desc": "A serious game designed to simulate academic program selection processes. Developed collaboratively using Godot Engine's scene system, C# scripting, and interactive UI components. This university project emphasized user experience design, educational game mechanics, and team-based software development.",
+        "tech": "C#, Godot Engine, team of 3"
+      }
+    ],
+    "more": "And many more on my GitHub!"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "julesgoydev@gmail.com",
+      "letterboxd": "Letterboxd"
+    }
+  },
+  "footer": "© 2026 Jules Goy"
+}

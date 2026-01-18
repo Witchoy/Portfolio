@@ -15,7 +15,13 @@
     />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
+
   <body>
+    <div class="lang-toggle">
+      <button class="lang-btn lang-btn-en active" data-lang="en">🇬🇧 EN</button>
+      <button class="lang-btn lang-btn-fr" data-lang="fr">🇫🇷 FR</button>
+    </div>
+
     <div id="app">
       <canvas id="profile_background"></canvas>
       <div class="overlay-text">
@@ -26,124 +32,78 @@
           aria-hidden="false"
         />
         <div class="overlay-text-content">
-          <h1>Jules Goy</h1>
-          <h2>Junior Software Developer</h2>
-          <p>
-            Hi! I'm Jules Goy, a French junior software developer. I'm
-            passionate about video game development and Unix systems, and I also
-            enjoy music, cinema, and comics.
-          </p>
+          <h1 data-i18n="hero.name"></h1>
+          <h2 data-i18n="hero.title"></h2>
+          <p data-i18n="hero.intro"></p>
         </div>
       </div>
     </div>
 
     <main>
-      <section>
-        <h1>About Me</h1>
-        <p>
-          I am a French software development student in the second year of a BUT
-          Informatique at the IUT, specializing in "Réalisation d'applications :
-          conception, développement, validation." Throughout my studies, I have
-          gained solid foundations in programming, web development, database
-          management, system and network administration, and project management.
-        </p>
-        <p>
-          My academic projects, such as Níðhöggr (Java/Angular/SQLite) and
-          Torrington (C# with Godot, teamwork project), have allowed me to apply
-          these skills in concrete contexts: from designing user interfaces and
-          managing data to collaborating in a group and presenting results.
-          These experiences, combined with personal projects like my WiMusic API
-          (Node.js, TypeScript, Docker), have shaped my professional identity as
-          a developer who values both technical quality and user experience.
-        </p>
-        <p>
-          I am particularly interested in full-stack web development and game
-          development. I currently work with Unity and plan to explore Unreal
-          Engine. Beyond coding, I draw inspiration from cinema, music, and
-          comics, which nurture my creativity and curiosity.
-        </p>
+      <section id="about-section">
+        <h1 data-i18n="about.title"></h1>
+        <p data-i18n="about.paragraphs.0"></p>
+        <p data-i18n="about.paragraphs.1"></p>
+        <p data-i18n="about.paragraphs.2"></p>
       </section>
 
-      <section>
-        <h1>Projects</h1>
+      <section id="projects-section">
+        <h1 data-i18n="projects.title"></h1>
 
         <div>
-          <h2><a href="">Níðhöggr</a></h2>
-          <p>
-            A full-stack web application developed as a team project. Features
-            user authentication, data management, and responsive design. Built
-            with modern development practices including version control, agile
-            methodology, and collaborative programming.
-          </p>
-          <p>Java, Angular, SQLite</p>
-        </div>
-
-        <div>
-          <h2><a href="https://github.com/Witchoy/Arbay">Arbay</a></h2>
-          <p>
-            A 2D adventure game featuring character movement and enemies.
-            Developed using Unity's 2D tools, including sprite animation,
-            physics system, and scene management. This project enhanced my
-            understanding of game development pipelines and C# programming.
-          </p>
-          <p>C#, Unity</p>
+          <h2><a href="" data-i18n="projects.cards.0.name"></a></h2>
+          <p data-i18n="projects.cards.0.desc"></p>
+          <p data-i18n="projects.cards.0.tech"></p>
         </div>
 
         <div>
           <h2>
-            <a href="https://github.com/Witchoy/WiMusic_Api">WiMusic API</a>
+            <a
+              href="https://github.com/Witchoy/Arbay"
+              data-i18n="projects.cards.1.name"
+            ></a>
           </h2>
-          <p>
-            A RESTful music streaming API with complete CRUD operations for
-            tracks, artists, and albums. Features include file upload handling,
-            database relationships with Prisma ORM, input validation, and audio
-            streaming capabilities. Containerized with Docker for easy
-            deployment and scalability.
-          </p>
-          <p>TypeScript, Node.js, Docker</p>
+          <p data-i18n="projects.cards.1.desc"></p>
+          <p data-i18n="projects.cards.1.tech"></p>
         </div>
 
         <div>
           <h2>
-            <a href="https://github.com/Witchoy/Torrington">Torrington (T3)</a>
+            <a
+              href="https://github.com/Witchoy/WiMusic_Api"
+              data-i18n="projects.cards.2.name"
+            ></a>
           </h2>
-          <p>
-            A serious game designed to simulate academic program selection
-            processes. Developed collaboratively using Godot Engine's scene
-            system, C# scripting, and interactive UI components. This university
-            project emphasized user experience design, educational game
-            mechanics, and team-based software development.
-          </p>
-          <p>C#, Godot Engine, team of 3</p>
+          <p data-i18n="projects.cards.2.desc"></p>
+          <p data-i18n="projects.cards.2.tech"></p>
         </div>
 
-        <p>
-          And many more on my <a href="https://github.com/Witchoy">GitHub!</a>
-        </p>
+        <div>
+          <h2>
+            <a
+              href="https://github.com/Witchoy/Torrington"
+              data-i18n="projects.cards.3.name"
+            ></a>
+          </h2>
+          <p data-i18n="projects.cards.3.desc"></p>
+          <p data-i18n="projects.cards.3.tech"></p>
+        </div>
+
+        <p data-i18n="projects.more"></p>
       </section>
 
-      <section>
-        <h1>Contact Me</h1>
-        <p>
-          <a href="https://linkedin.com/in/jules-goy" target="_blank"
-            >LinkedIn</a
-          >
-          | <a href="https://github.com/witchoy" target="_blank">GitHub</a> |
-          <a href="mailto:julesgoydev@gmail.com">julesgoydev@gmail.com</a> |
-          <a href="https://letterboxd.com/jules_goy" target="_blank"
-            >Letterboxd</a
-          >
-        </p>
+      <section id="contact-section">
+        <h1 data-i18n="contact.title"></h1>
+        <p id="contact-links"></p>
       </section>
     </main>
 
     <footer>
-      <p>
-        &copy; 2025 Jules Goy | Made with passion | Hosted on my Raspberry Pi
-      </p>
+      <p data-i18n="footer"></p>
     </footer>
 
     <script type="module" src="/src/main.ts"></script>
     <script type="module" src="/src/binary_background.ts"></script>
+    <script type="module" src="/src/lang-switch.ts"></script>
   </body>
 </html>

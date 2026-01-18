@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "name": "Jules Goy",
+    "title": "Junior Software Developer",
+    "intro": "Hello ! Je suis Jules Goy, un junior software developer français. Je suis passionné par le développement de jeux vidéo et les systèmes Unix, et j'aime aussi la musique, le cinéma et les comics."
+  },
+  "about": {
+    "title": "À propos de moi",
+    "paragraphs": [
+      "Je suis étudiant français en BUT Informatique, spécialisé en 'Réalisation d'applications : conception, développement, validation'. Au cours de mes études, j'ai acquis de solides bases en programmation, développement web, gestion de bases de données, administration systèmes et réseaux, et gestion de projet.",
+      "Mes projets académiques, comme Níðhöggr (TypeScript/Angular/Postgresql) et Torrington (C# avec Godot, projet en équipe), m'ont permis d'appliquer ces compétences dans des contextes concrets : de la conception d'interfaces utilisateur et la gestion de données à la collaboration en groupe et la présentation des résultats. Ces expériences, combinées à des projets personnels comme mon API WiMusic (Node.js, TypeScript, Docker), ont forgé mon identité professionnelle de développeur soucieux de la qualité technique et de l'expérience utilisateur.",
+      "Je m'intéresse particulièrement au développement web full-stack et au développement de jeux vidéo. Je travaille actuellement avec Unity et prévois d'explorer Unreal Engine. Au-delà du code, je puise mon inspiration dans le cinéma, la musique et les comics, qui nourrissent ma créativité et ma curiosité."
+    ]
+  },
+  "projects": {
+    "title": "Projets",
+    "cards": [
+      {
+        "name": "Níðhöggr",
+        "desc": "Une application développée en équipe pour l'Eurométropole de Strasbourg. Fonctionnalités : authentification utilisateur, gestion des données et design responsive. Réalisée avec des pratiques modernes : gestion de version, méthodologie agile et programmation collaborative.",
+        "tech": "TypeScript, Angular, Postgresql"
+      },
+      {
+        "name": "Arbay",
+        "desc": "Un jeu d'aventure 2D avec déplacement de personnage et ennemis. Développé avec les outils 2D de Unity : animation de sprites, système physique et gestion de scènes. Ce projet a renforcé ma compréhension des pipelines de développement de jeux et de la programmation C#.",
+        "tech": "C#, Unity"
+      },
+      {
+        "name": "WiMusic API",
+        "desc": "Une API RESTful de streaming musical avec opérations CRUD complètes pour les morceaux, artistes et albums. Fonctionnalités : gestion des uploads, relations de base de données avec Prisma ORM, validation des entrées et streaming audio. Conteneurisée avec Docker pour un déploiement et une scalabilité faciles.",
+        "tech": "TypeScript, Node.js, Docker"
+      },
+      {
+        "name": "Torrington (T3)",
+        "desc": "Un serious game simulant les processus de choix de parcours académiques. Développé en équipe avec le système de scènes de Godot, des scripts C# et des interfaces interactives. Ce projet universitaire a mis l'accent sur le design UX, la mécanique de jeu éducative et le développement collaboratif.",
+        "tech": "C#, Godot Engine, équipe de 3"
+      }
+    ],
+    "more": "Et bien d'autres sur mon GitHub !"
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "julesgoydev@gmail.com",
+      "letterboxd": "Letterboxd"
+    }
+  },
+  "footer": "© 2026 Jules Goy"
+}
