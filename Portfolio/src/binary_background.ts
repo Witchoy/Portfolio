@@ -1,4 +1,4 @@
-import "./binary_background.css";
+import "./style.css";
 
 const canvas = document.getElementById(
   "profile_background",
@@ -27,8 +27,8 @@ function drawGrid() {
 
 function animate() {
   if (!ctx) return;
-  // VS Code dark background
-  ctx.fillStyle = "#1e1e1e";
+  
+  ctx.fillStyle = "#0F1116";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   // Update offset for diagonal movement
@@ -40,7 +40,7 @@ function animate() {
   if (offsetY <= -cellSize) offsetY = 0;
 
   // Draw grid of alternating 0 and 1
-  ctx.fillStyle = "#569cd6";
+  ctx.fillStyle = "#88C9DD";
   ctx.font = '20px "Consolas", "Courier New", monospace';
 
   for (let i = 0; i < cols; i++) {

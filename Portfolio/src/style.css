@@ -1,0 +1,174 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #1e1e1e;
+  font-family: 'Jersey 10', 'Consolas', 'Courier New', monospace;
+  color: #fff;
+}
+
+/* Hero section */
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#profile_background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #3c3c3c;
+  filter: blur(1px);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.overlay-text {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.overlay-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.profile-img {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+  flex-shrink: 0;
+}
+
+/* Content sections */
+main {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 4rem;
+  padding: 2rem 2.5rem;
+  background: rgba(34, 34, 34, 0.85);
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin: 0.5rem 0 0;
+}
+
+a {
+  color: #7fd7ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 2rem 0 1rem;
+  text-align: center;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .overlay-text {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+  
+  .profile-img {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  main,
+  section {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #app {
+    min-height: 30rem;
+  }
+  
+  .overlay-text {
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
+  }
+  
+  .profile-img {
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  main,
+  section {
+    padding: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 1.3rem;
+  }
+  
+  h2 {
+    font-size: 1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+}
