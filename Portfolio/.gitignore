@@ -1,0 +1,31 @@
+# Logs
+logs
+*.log
+pnpm-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Build tools
+.vite/
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+
+.Trash-*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
