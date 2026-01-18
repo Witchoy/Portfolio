@@ -27,7 +27,7 @@ function drawGrid() {
 
 function animate() {
   if (!ctx) return;
-  
+
   ctx.fillStyle = "#0F1116";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 

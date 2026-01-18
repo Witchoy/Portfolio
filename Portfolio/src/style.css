@@ -4,7 +4,7 @@ body {
   padding: 0;
   min-height: 100vh;
   background: #1e1e1e;
-  font-family: 'Jersey 10', 'Consolas', 'Courier New', monospace;
+  font-family: "Jersey 10", "Consolas", "Courier New", monospace;
   color: #fff;
 }
 
@@ -120,21 +120,21 @@ footer {
     gap: 1.5rem;
     padding: 1.5rem 1rem;
   }
-  
+
   .profile-img {
     width: 8rem;
     height: 8rem;
   }
-  
+
   main,
   section {
     padding: 1rem;
   }
-  
+
   h1 {
     font-size: 2.2rem;
   }
-  
+
   h2 {
     font-size: 1.3rem;
   }
@@ -144,30 +144,30 @@ footer {
   #app {
     min-height: 30rem;
   }
-  
+
   .overlay-text {
     padding: 1rem 0.5rem;
     border-radius: 1rem;
   }
-  
+
   .profile-img {
     width: 5rem;
     height: 5rem;
   }
-  
+
   main,
   section {
     padding: 0.5rem;
   }
-  
+
   h1 {
     font-size: 1.3rem;
   }
-  
+
   h2 {
     font-size: 1rem;
   }
-  
+
   p {
     font-size: 1rem;
   }
