@@ -17,8 +17,8 @@ function drawGrid() {
   const maxWidth = window.innerWidth - 40; // Leave some margin
   const maxHeight = window.innerHeight - 40;
 
-  cols = Math.floor(maxWidth / cellSize) + 2; // Extra cells for seamless loop
-  rows = Math.floor(maxHeight / cellSize) + 2;
+  cols = Math.floor(maxWidth / cellSize);
+  rows = Math.floor(maxHeight / cellSize);
 
   // Set canvas size to fit grid perfectly
   canvas.width = (cols - 2) * cellSize;
