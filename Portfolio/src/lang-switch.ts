@@ -1,6 +1,6 @@
 // Simple language switcher for Portfolio
-import en from "./local/en.json";
-import fr from "./local/fr.json";
+import en from "./locales/en.json";
+import fr from "./locales/fr.json";
 
 const translations: Record<string, any> = { en, fr };
 const langButtons = document.querySelectorAll(".lang-btn") as NodeListOf<HTMLButtonElement>;
